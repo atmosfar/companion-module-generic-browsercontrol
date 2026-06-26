@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+
+# Markdown (keep README and HELP)
+*.md
+!README.md
+!companion/HELP.md
