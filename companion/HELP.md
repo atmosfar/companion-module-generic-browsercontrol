@@ -50,3 +50,18 @@ Set `remote.active-protocols=1` in `about:config` and relaunch Firefox with thes
 - Wait for Selector
 - Clear Input
 - Set Input Value
+
+## Action results
+
+Every action returns a result describing whether it succeeded:
+
+- Most actions return `true` / `false`.
+- Navigate to URL returns `{ success, url, title, status }`.
+
+In a preset, an action can store its result into a button-local variable ("store result"), so you can build buttons and logic that react to success vs. failure.
+
+The module also exposes the `Last URL`, `Last Title` and `Last Status` variables, set after a successful Navigate to URL.
+
+## Timeouts
+
+Browser operations are network-bound and can be slow. Companion aborts an action after a default window of about 5 seconds, in which case the action reports failure. A per-action `executionTimeout` option is planned in a future `@companion-module/base` release to raise this for slow operations.
