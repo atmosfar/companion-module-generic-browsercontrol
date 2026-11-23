@@ -3,6 +3,11 @@ dist/
 coverage/
 .DS_Store
 .pi/
+package-lock.json
+pkg/
+*.tgz
+/.yarn
+/.vscode
 
 # Markdown (keep README and HELP)
 *.md

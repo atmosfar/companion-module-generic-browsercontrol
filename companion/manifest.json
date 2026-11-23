@@ -1,5 +1,6 @@
 {
-	"id": "bitfocus-puppeteer",
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"id": "generic-browsercontrol",
 	"name": "Browser (Puppeteer)",
 	"shortname": "Browser",
 	"description": "Control Chrome or Firefox via Puppeteer remote debugging.",
@@ -21,7 +22,7 @@
 	},
 	"type": "connection",
 	"permissions": ["filesystem"],
-	"legacyIds": [],
+	"legacyIds": ["bitfocus-puppeteer"],
 	"manufacturer": "Generic",
 	"products": ["Browser Control"],
 	"keywords": ["Browser", "Automation", "Puppeteer", "Chrome", "Firefox"]
